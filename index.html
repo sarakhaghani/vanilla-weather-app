@@ -19,23 +19,28 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-2">
-          <h1>Tehran</h1>
-          <p>
-            <span class="theday">Friday</span>
-            <span class="thetime">19:55</span>
-          </p>
-          <p>
-            Humidity:<span id="humidity">10</span>% Wind:<span id="wind">5</span
-            >km/h
-          </p>
-        </div>
-        <div class="col-2">
-          <h3>
-            <i class="fa-solid fa-sun sun"></i>
-            <span>7 <small>℃ |℉</small> </span>
-          </h3>
+      <div class="weather-app">
+        <div class="row">
+          <div class="col-4">
+            <h1>Tehran</h1>
+            <p>
+              <span class="theday">Friday</span>
+              <span class="thetime">19:55</span>
+            </p>
+          </div>
+          <div class="col-4" class="middle-middle">
+            <h3>
+              <i class="fa-solid fa-sun sun"></i>
+              <span class="current-temp">7</span>
+              <span><small>℃ |℉</small></span>
+            </h3>
+          </div>
+          <div class="col-4" class="middle-left">
+            <ul>
+              <li>Humidity: <span id="humidity">10</span>%</li>
+              <li>Wind: <span id="wind">5</span>km/h</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
