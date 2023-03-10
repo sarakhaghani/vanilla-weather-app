@@ -10,13 +10,34 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/b59ec276c4.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather</title>
   </head>
   <body>
     <div class="container">
-      <h1>hello</h1>
-      
+      <div class="row">
+        <div class="col-2">
+          <h1>Tehran</h1>
+          <p>
+            <span class="theday">Friday</span>
+            <span class="thetime">19:55</span>
+          </p>
+          <p>
+            Humidity:<span id="humidity">10</span>% Wind:<span id="wind">5</span
+            >km/h
+          </p>
+        </div>
+        <div class="col-2">
+          <h3>
+            <i class="fa-solid fa-sun sun"></i>
+            <span>7 <small>℃ |℉</small> </span>
+          </h3>
+        </div>
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>
