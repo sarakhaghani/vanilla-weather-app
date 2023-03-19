@@ -37,8 +37,19 @@ function displayTemp(response) {
   );
 }
 
-let apiKey = "42ab2c2ee73f7e1a2ff24479d6688080";
-let city = "Tehran";
-apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+function search(city) {
+  let apiKey = "42ab2c2ee73f7e1a2ff24479d6688080";
 
-axios.get(apiUrl).then(displayTemp);
+  apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+
+  axios.get(apiUrl).then(displayTemp);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
