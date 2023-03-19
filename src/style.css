@@ -32,10 +32,8 @@ h3 {
   position: relative;
   margin-top: 13px;
 }
-.sun {
-  font-size: 40px;
-  margin-right: 5px;
-  color: rgb(147, 144, 144);
+.icon {
+  width: 70px;
 }
 .current-temp {
   margin-left: 5px;
