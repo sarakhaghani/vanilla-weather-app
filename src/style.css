@@ -67,3 +67,16 @@ ul {
 .unit {
   font-size: 10px;
 }
+
+a {
+  text-decoration: none;
+}
+
+.middle-middle .active {
+  color: rgb(35, 22, 22);
+  cursor: default;
+}
+
+.middle-middle .active:hover {
+  text-decoration: none;
+}
