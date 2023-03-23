@@ -20,54 +20,57 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form id="search-form" class="mb-4">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-4">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Enter a city"
+                  class="form-control"
+                  id="city-input"
+                />
+              </div>
+              <div class="col-3">
+                <input type="submit" value="search" class="btn btn-primary" />
+              </div>
+            </div>
+          </form>
+
           <div class="row">
-            <div class="col-9">
-              <input
-                type="search"
-                placeholder="Enter a city"
-                class="form-control"
-                id="city-input"
-              />
-            </div>
             <div class="col-3">
-              <input type="submit" value="search" class="btn btn-primary" />
+              <h1 id="city"></h1>
+              <p>
+                <span class="date" id="date"></span>
+              </p>
             </div>
-          </div>
-        </form>
+            <div class="col-5 middle-middle">
+              <h3>
+                <img src="" id="icon" class="icon" alt="" />
 
-        <div class="row">
-          <div class="col-3">
-            <h1 id="city"></h1>
-            <p>
-              <span class="date" id="date"></span>
-            </p>
-          </div>
-          <div class="col-5 middle-middle">
-            <h3>
-              <img src="" id="icon" class="icon" alt="" />
-
-              <span class="current-temp" id="currentTemp"></span>
-              <span
-                ><small>
-                  <a href="#" id="celsius-link" class="active">℃</a> |
-                  <a href="#" id="fahrenheit-link">℉</a>
-                </small>
-              </span>
-            </h3>
-          </div>
-          <div class="col-4 middle-left">
-            <ul>
-              <li id="description"></li>
-              <li>Humidity: <span id="humidity" class="humidity"></span>%</li>
-              <li>
-                Wind: <span id="wind" class="wind"></span
-                ><span class="unit">km/h</span>
-              </li>
-            </ul>
+                <span class="current-temp" id="currentTemp"></span>
+                <span
+                  ><small>
+                    <a href="#" id="celsius-link" class="active">℃</a> |
+                    <a href="#" id="fahrenheit-link">℉</a>
+                  </small>
+                </span>
+              </h3>
+            </div>
+            <div class="col-4 middle-left">
+              <ul>
+                <li id="description"></li>
+                <li>Humidity: <span id="humidity" class="humidity"></span>%</li>
+                <li>
+                  Wind: <span id="wind" class="wind"></span
+                  ><span class="unit">km/h</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+        <p class="end"><a href="">open-source code</a> by Sara Khaghani</p>
       </div>
     </div>
     <script src="src/app.js"></script>
