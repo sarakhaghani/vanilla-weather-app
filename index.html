@@ -39,13 +39,21 @@
           </form>
 
           <div class="row">
-            <div class="col-3">
+            <div class="col-6">
               <h1 id="city"></h1>
               <p>
                 <span class="date" id="date"></span>
               </p>
+              <ul>
+                <li id="description"></li>
+                <li>Humidity: <span id="humidity" class="humidity"></span>%</li>
+                <li>
+                  Wind: <span id="wind" class="wind"></span
+                  ><span class="unit">km/h</span>
+                </li>
+              </ul>
             </div>
-            <div class="col-5 middle-middle">
+            <div class="col-6 middle-middle">
               <h3>
                 <img src="" id="icon" class="icon" alt="" />
 
@@ -58,32 +66,9 @@
                 </span>
               </h3>
             </div>
-            <div class="col-4 middle-left">
-              <ul>
-                <li id="description"></li>
-                <li>Humidity: <span id="humidity" class="humidity"></span>%</li>
-                <li>
-                  Wind: <span id="wind" class="wind"></span
-                  ><span class="unit">km/h</span>
-                </li>
-              </ul>
-            </div>
-            <div class="weather-forecast" id="forecast">
-              <div class="row">
-                <div class="col-2">
-                  <div class="forecast-date">Thu</div>
-                  <img
-                    src=" https://openweathermap.org/img/wn/10d@2x.png"
-                    alt=""
-                    width="40px"
-                  />
-                  <div class="forecast-temp">
-                    <span class="forecast-temp-max">18°</span>
-                    <span class="forecast-temp-min">12°</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <hr />
+
+            <div class="weather-forecast" id="forecast"></div>
           </div>
         </div>
         <p class="end"><a href="">open-source code</a> by Sara Khaghani</p>
