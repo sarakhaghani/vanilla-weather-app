@@ -25,7 +25,7 @@ h1 {
 p {
   font-size: 15px;
   line-height: 3px;
-  margin-left: 9px;
+  margin-left: 4px;
 }
 
 .date {
@@ -35,17 +35,20 @@ p {
 
 .middle-middle {
   padding-right: 0px;
+  padding-left: 0px;
 }
 h3 {
   position: relative;
   margin-top: 13px;
 }
 .icon {
-  width: 70px;
+  width: 80px;
 }
-.current-temp {
+span.current-temp {
   margin-left: 5px;
-  font-size: 40px;
+  font-size: 50px;
+  position: relative;
+  top: 10px;
 }
 small {
   color: rgb(89, 88, 88);
@@ -56,11 +59,11 @@ li {
   list-style: none;
   text-transform: capitalize;
   color: rgb(89, 88, 88);
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 100;
   line-height: 0px;
   margin: 15px;
-  margin-left: 5px;
+  margin-left: 4px;
 }
 ul {
   padding-left: 0px;
@@ -80,21 +83,16 @@ a {
   text-decoration: none;
 }
 
-.middle-middle .active {
-  color: rgb(35, 22, 22);
-  cursor: default;
-}
-
-.middle-middle .active:hover {
-  text-decoration: none;
-}
 .end {
   font-size: small;
 }
 
 .weather-forecast {
-  margin-top: 20px;
   text-align: center;
+
+  margin-top: 10px;
+  margin-left: 0px;
+  padding-left: 0px;
 }
 .forecast-date {
   font-size: 16px;
@@ -105,4 +103,21 @@ a {
 }
 .forecast-temp-min {
   opacity: 0.6;
+}
+div.col-2 {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+hr {
+  margin-bottom: 5px;
+}
+div.row {
+  margin-left: 0px;
+  margin-right: 1px;
+}
+div.col-6 {
+  margin-bottom: 5px;
+}
+.celsius {
+  font-size: medium;
 }
