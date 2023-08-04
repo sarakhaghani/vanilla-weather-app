@@ -33,6 +33,7 @@ p {
 .date {
   color: rgb(89, 88, 88);
   font-size: small;
+  display: flex;
 }
 
 .middle-middle {
@@ -126,4 +127,10 @@ div.col-6 {
 .btn-primary {
   background-color: rgba(72, 72, 74, 0.7);
   border-color: rgb(72, 72, 74);
+}
+
+@media (max-width: 500px) {
+  .date {
+    display: none;
+  }
 }
